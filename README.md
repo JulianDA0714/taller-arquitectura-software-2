@@ -35,7 +35,9 @@ API desarrollada con operaciones CRUD, consulta de festivos por año, verificaci
 
 ### API Calendario
 
-Pendiente de implementación, siguiendo el modelo relacional y la arquitectura Onion definidos en el diseño.
+Implementada con Spring Boot y PostgreSQL en cinco módulos Onion. Consume la API Festivos existente, genera los 365 o 366 días de un año, los clasifica y almacena, y permite consultarlos en orden de fecha. Incluye validaciones, guardado transaccional, manejo de errores y documentación Swagger.
+
+**[Ver API Calendario: configuración y ejecución](api-calendario/README.md)**
 
 ## Diagramas
 
@@ -50,5 +52,5 @@ Pendiente de implementación, siguiendo el modelo relacional y la arquitectura O
 |---|---|
 | Diseño y diagramas | Completado |
 | API Festivos | Implementada y probada |
-| API Calendario | Pendiente |
-| Integración entre APIs | Pendiente |
+| API Calendario | Implementada y documentada |
+| Integración entre APIs | Implementada mediante HTTP, conservando API Festivos |
